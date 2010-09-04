@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Sat Sep 04 10:40:04 CEST 2010
+builderNum=7
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=cv.tex
+outputFile=KarolySzanto.pdf
+langSpell=en
+markDer=true
+srcDir=

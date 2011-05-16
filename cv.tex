@@ -31,6 +31,13 @@
 %Italian hyphenation for the word: ''corporations''
 \hyphenation{im-pre-se}
 
+%--------------------SOME CUSTOM COMMANDS----------------------
+\newcommand{\projecttype}[1]{ \raggedleft  \footnotesize{\emph{\underline{#1}}}}
+\newcommand{\pSchool}{\projecttype{school}}
+\newcommand{\pOpensource}{\projecttype{opensource}}
+\newcommand{\pIndividual}{\projecttype{individual}}
+\newcommand{\pDiploma}{\projecttype{diploma}}
+
 %-------------WATERMARK TEST [**not part of a CV**]---------------
 \usepackage[absolute]{textpos}
 
@@ -148,8 +155,8 @@ graduated the first Cisco Certified Network Associate module.\\ \multicolumn{2}{
 \begin{longtable}{p{2.5cm}|p{11cm}}
  \raggedleft \textsc{February 2011} & "LaPizzeria" webshop\\
  \raggedleft \textsc{April 2011} & \footnotesize{(\url{https://bitbucket.org/KarolySzanto/lapizzeria_jsp})}\\
- & \footnotesize{(\url{https://bitbucket.org/KarolySzanto/lapizzeria_jsf})}\\
- & \footnotesize{A web application developed for didactic reasons, using Java-based technologies and frameworks: Servlet and JSP, JSF and Hibernate. The applications were deployed in Tomcat.}\\
+& \footnotesize{(\url{https://bitbucket.org/KarolySzanto/lapizzeria_jsf})}\\
+\pSchool & \footnotesize{A web application developed for didactic reasons, using Java-based technologies and frameworks: Servlet and JSP, JSF and Hibernate. The applications were deployed in Tomcat.}\\
  \multicolumn{2}{c}{} \\
 
  & Jolie\\
@@ -157,14 +164,14 @@ graduated the first Cisco Certified Network Associate module.\\ \multicolumn{2}{
  & \footnotesize{\url{http://www.jolie-lang.org}}\\
  & \footnotesize{A programming language based upon the service-oriented programming paradigm, suitable to create new services from scratch or to compose existing ones in order to obtain new functionalities.}\\
 
- & \footnotesize{I have contributed to this project implementing a few missing operators (+=, -=, /= and *=) and implementing a new communication protocol based on \href{http://json-rpc.org/}{JSON-RPC}.}\\
+ \pOpensource & \footnotesize{I have contributed to this project implementing a few missing operators (+=, -=, /= and *=) and implementing a new communication protocol based on \href{http://json-rpc.org/}{JSON-RPC}.}\\
  \multicolumn{2}{c}{} \\
 
  \raggedleft \textsc{September 2010} & JCAF\\
  \raggedleft \textsc{December 2010} & \emph{The Java Context-Awareness
  Framework} \\ 
  & \footnotesize{(\url{https://sourceforge.net/projects/jcaf})}\\
- & \footnotesize{Context-awareness is a key concept in
+ \pOpensource & \footnotesize{Context-awareness is a key concept in
  \href{http://en.wikipedia.org/wiki/Ubiquitous_computing}{ubiquitous~computing}.
  JCAF is a Java-based context-awareness infrastructure and programming API for
  creating context-aware applications on the J2SE platform. I have extended the
@@ -177,7 +184,7 @@ graduated the first Cisco Certified Network Associate module.\\ \multicolumn{2}{
  
  & Noware Bicycle Shop\\
  & \footnotesize{(\url{http://subversion.assembla.com/svn/mdd2010})}\\
- & \footnotesize{An IT solution for a fictive bicycle shop enabling users to
+ \pSchool & \footnotesize{An IT solution for a fictive bicycle shop enabling users to
  easily create custom bicycles from available parts. Invoking a model driven approach, the application was developed as several Eclipse plugins, making use of EMF, GMF, XText and XPand.}\\ 
  \multicolumn{2}{c}{} \\
   
@@ -185,53 +192,52 @@ graduated the first Cisco Certified Network Associate module.\\ \multicolumn{2}{
  & \emph{A multi-device photo browser}\\
  &
  \footnotesize{(\url{http://subversion.assembla.com/svn/fluid_photo_browser/trunk})}\\ 
- & \footnotesize{The application enables users to move photos from
+\pSchool & \footnotesize{The application enables users to move photos from
  smart phones, holding personal information, to a shared/public tabletop where
  many people can browse the photos all together}\\ 
  \multicolumn{2}{c}{} \\
  
  & P2P and Service Discovery in Android\\
- &
- \footnotesize{(\url{http://svn.assembla.com/svn/android_p2p/trunk/dk.itu.android.bt.DeviceDiscovery})}\\
+\pSchool & \footnotesize{(\url{http://svn.assembla.com/svn/android_p2p/trunk/dk.itu.android.bt.DeviceDiscovery})}\\
  \multicolumn{2}{c}{} \\
  
  \raggedleft \textsc{September 2009} & Kigun \\
  \raggedleft \textsc{April 2010} & \emph{A dental cabinet management project}
  \\ & \footnotesize{The project is built upon the Apache Felix framework (an open source implementation of the OSGi Release 4 core framework specification)
  using the following technologies: Hibernate, Swing, JasperReports} \\ \\
- & \footnotesize{The team has three members (including myself) working from
+ \pIndividual & \footnotesize{The team has three members (including myself) working from
  different geographical locations, practicing agile development.} \\
  \multicolumn{2}{c}{} \\ 
  
  \raggedleft \emph{March 2009} & Diploma Engineer
  project \\ \raggedleft \textsc{June 2009} & \emph{Automation of Complex Design Flaws Detection} \\
- &\footnotesize{An Eclipse plug-in that detects design problems in projects and gives restructuring hints based on design patterns.}\\
+ \pDiploma &\footnotesize{An Eclipse plug-in that detects design problems in projects and gives restructuring hints based on design patterns.}\\
  \multicolumn{2}{c}{} \\
   
  \raggedleft \textsc{2008} & Mini Java compiler \\ 
  &
  \footnotesize{(\url{http://svn2.assembla.com/svn/proiectpt/MiniJavaCompiler})}\\
- & \footnotesize{\href{http://compilers.cs.ucla.edu/vids/MCIIJ2E}{Mini Java} is a subset of Java. The compiler is written Java using the JavaCC parser
+\pSchool & \footnotesize{\href{http://compilers.cs.ucla.edu/vids/MCIIJ2E}{Mini Java} is a subset of Java. The compiler is written Java using the JavaCC parser
  generator.} \\
  \multicolumn{2}{c}{} \\
   
  \raggedleft \textsc{2007} & Download Accelerator \\
  &
  \footnotesize{(\url{http://subversion.assembla.com/svn/old_projects/trunk/DownloadAccelerator})}\\
- & \footnotesize{A client-server application written in standard C, under
+ \pSchool & \footnotesize{A client-server application written in standard C, under
  Unix. The application offers the possibility to pause and resume a download. The client can download
  from multiple servers simultaneously.}\\ 
  \multicolumn{2}{c}{} \\
  
  & YAGLE\\
  &\footnotesize{(\url{http://subversion.assembla.com/svn/old_projects/trunk/Yagle})}\\
- & \footnotesize{On-line multiplayer arcade games. Written as a Java client-server application.}\\
+\pSchool & \footnotesize{On-line multiplayer arcade games. Written as a Java client-server application.}\\
  \multicolumn{2}{c}{} \\
  
  \raggedleft \textsc{2005} & Adolix Wallpaper Changer \\
  &
  \footnotesize{(\url{http://subversion.assembla.com/svn/old_projects/trunk/awc})}\\
- & \footnotesize{A
+\pIndividual & \footnotesize{A
  desktop wallpaper manager, written in Delphi
  (\href{http://www.adolix.com/wallpaper-changer/}{http://www.adolix.com/wallpaper-changer/}).} \\
  \multicolumn{2}{c}{} \\
@@ -239,7 +245,7 @@ graduated the first Cisco Certified Network Associate module.\\ \multicolumn{2}{
   \raggedleft \textsc{2003} & File Manager Application \\
   \raggedleft \textsc{2004} &
  \footnotesize{(\url{http://subversion.assembla.com/svn/old_projects/trunk/KNavigator})}\\
- & \footnotesize{Clone of the well known
+\pSchool & \footnotesize{Clone of the well known
 DosNavigator file manager.} \\
 \end{longtable}
 

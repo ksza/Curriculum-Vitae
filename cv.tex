@@ -32,11 +32,12 @@
 \hyphenation{im-pre-se}
 
 %--------------------SOME CUSTOM COMMANDS----------------------
-\newcommand{\projecttype}[1]{ \raggedleft  \footnotesize{\emph{\underline{#1}}}}
-\newcommand{\pSchool}{\projecttype{school}}
-\newcommand{\pOpensource}{\projecttype{opensource}}
-\newcommand{\pIndividual}{\projecttype{individual}}
-\newcommand{\pDiploma}{\projecttype{diploma}}
+%\newcommand{\projecttype}[1]{ \raggedleft 
+%\footnotesize{\emph{\underline{#1}}}}
+%\newcommand{\pSchool}{\projecttype{school}}
+%\newcommand{\pOpensource}{\projecttype{opensource}}
+%\newcommand{\pIndividual}{\projecttype{individual}}
+%\newcommand{\pDiploma}{\projecttype{diploma}}
 
 %-------------WATERMARK TEST [**not part of a CV**]---------------
 \usepackage[absolute]{textpos}
@@ -67,7 +68,7 @@
     \textsc{Place of Birth:} & Popesti, Bihor, Romania\\
     \textsc{Date of Birth:}  & 14th of July 1985 \\
     \textsc{Address:}   	 &  Grønjordskollegiet 1, 2708,
-    København S, 2300, Denmark \\ 
+    Copenhagen S, 2300, Denmark \\ 
     \textsc{Phone:}     	 & +45 502 85 221\\
     \textsc{Fax:}			 & +40 356 81 82 37\\
     \textsc{email:}     	 &
@@ -88,7 +89,8 @@
  & \footnotesize{My main responsibilities in the lab were to fulfill technical
  tasks in the \href{http://www.monarca-project.eu/}{MONARCA Project}, being constantly involved in the  development, maintenance and testing of the \emph{Android client application}, the \emph{infrastructure} (including server management) and of the \emph{web application}. The central infrastructure consists of a server running \href{http://couchdb.apache.org}{couchDB}, \href{http://www.joomla.org} and \href{http://httpd.apache.org}{apache server}. Each user has an Android enabled device running the client application and a mobile version of the couchDB, linked to the couchDB instance running on the central server.}\\
 
-& \footnotesize{Besides the MONARCA Project, I was also involved in ad-hoc programming tasks, as help in other projects was required.}\\\\
+& \footnotesize{Besides the MONARCA Project, I was also involved in ad-hoc programming tasks, as help in other projects was required.}\\
+\multicolumn{2}{c}{} \\ 
 
  \raggedleft \textsc{August 2010} & Software Developer at \textsc{\href{http://www3.oce.com/ro/}{Oc\'e}} srl, Timisoara, Romania
  \\\raggedleft \textsc{May 2007}\\& 
@@ -117,7 +119,7 @@
 \begin{tabular}{p{2.5cm}|p{11cm}}
 
  \raggedleft \textsc{May 2011} & The MONARCA Self-assessment System \\
- & Persuasive Personal Monitoring for Bipolar Patients \\
+ & \emph{Persuasive Personal Monitoring for Bipolar Patients} \\
  & \footnotesize{Demo for Pervasive Health 2011, Dublin, Ireland}
 \end{tabular}
 
@@ -153,25 +155,24 @@ graduated the first Cisco Certified Network Associate module.\\ \multicolumn{2}{
 %Section: Education
 \section{Undertaken Projects}
 \begin{longtable}{p{2.5cm}|p{11cm}}
- \raggedleft \textsc{February 2011} & "LaPizzeria" webshop\\
- \raggedleft \textsc{April 2011} & \footnotesize{(\url{https://bitbucket.org/KarolySzanto/lapizzeria_jsp})}\\
-& \footnotesize{(\url{https://bitbucket.org/KarolySzanto/lapizzeria_jsf})}\\
-\pSchool & \footnotesize{A web application developed for didactic reasons, using Java-based technologies and frameworks: Servlet and JSP, JSF and Hibernate. The applications were deployed in Tomcat.}\\
+ \raggedleft \textsc{February 2011} & "LaPizzeria" webshop\\ 
+ \raggedleft \textsc{April 2011} & \footnotesize{(\url{https://bitbucket.org/KarolySzanto/lapizzeria_jsp})}\\ & \footnotesize{(\url{https://bitbucket.org/KarolySzanto/lapizzeria_jsf})}\\
+& \footnotesize{A web application developed for didactic reasons, using Java-based technologies and frameworks: Servlet and JSP, JSF and Hibernate. The applications were deployed in Tomcat.}\\
  \multicolumn{2}{c}{} \\
 
  & Jolie\\
  & \emph{Java Orchestration Language Interpreter Engine}\\
- & \footnotesize{\url{http://www.jolie-lang.org}}\\
+ & \footnotesize{(\url{http://www.jolie-lang.org})}\\
  & \footnotesize{A programming language based upon the service-oriented programming paradigm, suitable to create new services from scratch or to compose existing ones in order to obtain new functionalities.}\\
 
- \pOpensource & \footnotesize{I have contributed to this project implementing a few missing operators (+=, -=, /= and *=) and implementing a new communication protocol based on \href{http://json-rpc.org/}{JSON-RPC}.}\\
- \multicolumn{2}{c}{} \\
+& \footnotesize{I have contributed to this project implementing a
+ few missing operators (+=, -=, /=, *=) and implementing a new communication protocol based on \href{http://json-rpc.org/}{JSON-RPC}.}\\ \multicolumn{2}{c}{} \\
 
  \raggedleft \textsc{September 2010} & JCAF\\
  \raggedleft \textsc{December 2010} & \emph{The Java Context-Awareness
  Framework} \\ 
  & \footnotesize{(\url{https://sourceforge.net/projects/jcaf})}\\
- \pOpensource & \footnotesize{Context-awareness is a key concept in
+ & \footnotesize{Context-awareness is a key concept in
  \href{http://en.wikipedia.org/wiki/Ubiquitous_computing}{ubiquitous~computing}.
  JCAF is a Java-based context-awareness infrastructure and programming API for
  creating context-aware applications on the J2SE platform. I have extended the
@@ -184,7 +185,7 @@ graduated the first Cisco Certified Network Associate module.\\ \multicolumn{2}{
  
  & Noware Bicycle Shop\\
  & \footnotesize{(\url{http://subversion.assembla.com/svn/mdd2010})}\\
- \pSchool & \footnotesize{An IT solution for a fictive bicycle shop enabling users to
+ & \footnotesize{An IT solution for a fictive bicycle shop enabling users to
  easily create custom bicycles from available parts. Invoking a model driven approach, the application was developed as several Eclipse plugins, making use of EMF, GMF, XText and XPand.}\\ 
  \multicolumn{2}{c}{} \\
   
@@ -192,52 +193,53 @@ graduated the first Cisco Certified Network Associate module.\\ \multicolumn{2}{
  & \emph{A multi-device photo browser}\\
  &
  \footnotesize{(\url{http://subversion.assembla.com/svn/fluid_photo_browser/trunk})}\\ 
-\pSchool & \footnotesize{The application enables users to move photos from
+ & \footnotesize{The application enables users to move photos from
  smart phones, holding personal information, to a shared/public tabletop where
  many people can browse the photos all together}\\ 
  \multicolumn{2}{c}{} \\
  
  & P2P and Service Discovery in Android\\
-\pSchool & \footnotesize{(\url{http://svn.assembla.com/svn/android_p2p/trunk/dk.itu.android.bt.DeviceDiscovery})}\\
- \multicolumn{2}{c}{} \\
+ & \footnotesize{(\url{http://svn.assembla.com/svn/android_p2p/trunk/dk.itu.android.bt.DeviceDiscovery})}\\ \multicolumn{2}{c}{} \\
  
  \raggedleft \textsc{September 2009} & Kigun \\
  \raggedleft \textsc{April 2010} & \emph{A dental cabinet management project}
  \\ & \footnotesize{The project is built upon the Apache Felix framework (an open source implementation of the OSGi Release 4 core framework specification)
  using the following technologies: Hibernate, Swing, JasperReports} \\ \\
- \pIndividual & \footnotesize{The team has three members (including myself) working from
+ & \footnotesize{The team has three members (including myself) working from
  different geographical locations, practicing agile development.} \\
  \multicolumn{2}{c}{} \\ 
  
  \raggedleft \emph{March 2009} & Diploma Engineer
- project \\ \raggedleft \textsc{June 2009} & \emph{Automation of Complex Design Flaws Detection} \\
- \pDiploma &\footnotesize{An Eclipse plug-in that detects design problems in projects and gives restructuring hints based on design patterns.}\\
+ project \\ \raggedleft \textsc{June 2009} &
+ \footnotesize{(\url{http://cdn.bitbucket.org/KarolySzanto/thesis/downloads/KarolySzanto_thesis.pdf})}\\
+ & \emph{Automation of Complex Design Flaws Detection} \\
+ &\footnotesize{An Eclipse plug-in that detects design problems in projects and gives restructuring hints based on design patterns.}\\
  \multicolumn{2}{c}{} \\
   
  \raggedleft \textsc{2008} & Mini Java compiler \\ 
  &
  \footnotesize{(\url{http://svn2.assembla.com/svn/proiectpt/MiniJavaCompiler})}\\
-\pSchool & \footnotesize{\href{http://compilers.cs.ucla.edu/vids/MCIIJ2E}{Mini Java} is a subset of Java. The compiler is written Java using the JavaCC parser
- generator.} \\
+ & \footnotesize{\href{http://compilers.cs.ucla.edu/vids/MCIIJ2E}{Mini Java} is
+a subset of Java. The compiler is written Java using the JavaCC parser generator.} \\
  \multicolumn{2}{c}{} \\
   
  \raggedleft \textsc{2007} & Download Accelerator \\
  &
  \footnotesize{(\url{http://subversion.assembla.com/svn/old_projects/trunk/DownloadAccelerator})}\\
- \pSchool & \footnotesize{A client-server application written in standard C, under
+ & \footnotesize{A client-server application written in standard C, under
  Unix. The application offers the possibility to pause and resume a download. The client can download
  from multiple servers simultaneously.}\\ 
  \multicolumn{2}{c}{} \\
  
  & YAGLE\\
  &\footnotesize{(\url{http://subversion.assembla.com/svn/old_projects/trunk/Yagle})}\\
-\pSchool & \footnotesize{On-line multiplayer arcade games. Written as a Java client-server application.}\\
- \multicolumn{2}{c}{} \\
+ & \footnotesize{On-line multiplayer arcade games. Written as a Java
+client-server application.}\\ \multicolumn{2}{c}{} \\
  
  \raggedleft \textsc{2005} & Adolix Wallpaper Changer \\
  &
  \footnotesize{(\url{http://subversion.assembla.com/svn/old_projects/trunk/awc})}\\
-\pIndividual & \footnotesize{A
+ & \footnotesize{A
  desktop wallpaper manager, written in Delphi
  (\href{http://www.adolix.com/wallpaper-changer/}{http://www.adolix.com/wallpaper-changer/}).} \\
  \multicolumn{2}{c}{} \\
@@ -245,7 +247,7 @@ graduated the first Cisco Certified Network Associate module.\\ \multicolumn{2}{
   \raggedleft \textsc{2003} & File Manager Application \\
   \raggedleft \textsc{2004} &
  \footnotesize{(\url{http://subversion.assembla.com/svn/old_projects/trunk/KNavigator})}\\
-\pSchool & \footnotesize{Clone of the well known
+ & \footnotesize{Clone of the well known
 DosNavigator file manager.} \\
 \end{longtable}
 
